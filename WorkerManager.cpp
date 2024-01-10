@@ -2,7 +2,7 @@
 #include "WorkManager.h"
 
 WorkerManager::WorkerManager() {
-    m_EmpArray = 0;
+    m_EmpNum = 0;
     m_EmpArray = nullptr;
 
     ifstream ifs;
@@ -28,7 +28,6 @@ WorkerManager::WorkerManager() {
     int num = this->get_EmpNum();
     cout << "职工人数为： " << num << endl;
     this->m_EmpNum = num;
-    this->m_FileIsEmpty = false;
 }
 
 WorkerManager::~WorkerManager() {
@@ -183,6 +182,7 @@ void WorkerManager::Show_Emp() {
     system("pause");
     system("cls");
 }
+
 
 int WorkerManager::Find_Emp(int id) {
     int index = -1;

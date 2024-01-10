@@ -22,6 +22,7 @@ public:
     void exitSystem();
     int m_EmpNum = 0;
     Worker** m_EmpArray;
+    Worker ** get_EmpArray(int id,string name,int dId);
     bool m_FileIsEmpty;
     int Find_Emp(int id);
     int get_EmpNum();
